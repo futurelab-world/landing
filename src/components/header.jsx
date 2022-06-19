@@ -87,7 +87,7 @@ export const Header = (props) => {
                       style={{marginTop: '2rem'}}
                
                       
-                      href={`https://tbdfuture.xyz/signup?email=${email}`}
+                      href={`https://tbdfuture.xyz/signup/${email}`}
                       className='btn btn-custom btn-lg page-scroll'
                     >
                       GET STARTED
