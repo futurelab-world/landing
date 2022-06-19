@@ -88,7 +88,7 @@ export const Header = (props) => {
           { !isMobile && <div className='col-xs-12 col-md-6'>
             <div className='about-text'>
             {' '}
-              <img src='img/demo-2.png' className='img-responsive' alt='' />{' '}
+              <img src='img/demo-yenifer.png' className='img-responsive' alt='' />{' '}
             </div>
           </div>
           }

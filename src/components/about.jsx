@@ -3,12 +3,12 @@
 
 export const About = (props) => {
   return (
-    <div id='how'>
+    <div id='how' style={{marginBottom: '5rem'}}>
       <div className='container'>
         <div className='row'>
           <div className='col-xs-12 col-md-6'>
             {' '}
-            <img src='img/about.jpg' className='img-responsive' alt='' />{' '}
+            <img src='img/how.png' className='img-responsive' alt='' />{' '}
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text'>
