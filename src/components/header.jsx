@@ -58,35 +58,40 @@ export const Header = (props) => {
                 fontSizze: '32px'
               }}>Turn yourself into assets</h2>
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
-              <h3>Reclaim Self-Sovereignty</h3>
-              <input
-                  style={{padding: '2rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
-                  type='email'
-                  id='email'
-                  name='email'
-                  className='form-control'
-                  placeholder='Email address'
-                  required
-                  onChange={() => {
+            
+              {/* <h3>Reclaim Self-Sovereignty</h3> */}
+              
 
-                  }}
-                />
-                <a
-                  href='https://tbdfuture.xyz'
-                  className='btn btn-custom btn-lg page-scroll'
-                >
-                  GET STARTED
-                </a>{' '}
-
-              <div className='list-style'>
+              <div className='list-style' style={{marginTop: '10rem'}}>
+                <h3>Reclaim Self-Sovereignty</h3>
+                
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
-                {' '}
+                  {' '}
+                  <input
+                    style={{ marginTop: '5rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
+                    type='email'
+                    id='email'
+                    name='email'
+                    className='form-control'
+                    placeholder='Email address'
+                    required
+                    onChange={() => {
+
+                    }}
+                  />
+                  <a
+                    style={{marginTop: '2rem'}}
+                    href='https://tbdfuture.xyz'
+                    className='btn btn-custom btn-lg page-scroll'
+                  >
+                    GET STARTED
+                  </a>{' '}
                 </div>
               </div>
             </div>
           </div>
           { !isMobile && <div className='col-xs-12 col-md-6'>
-            <div className='about-text'>
+            <div className='about-text' style={{width: '350px', marginLeft: '100px', marginTop: '25px'}}>
             {' '}
               <img src='img/demo-yenifer.png' className='img-responsive' alt='' />{' '}
             </div>
