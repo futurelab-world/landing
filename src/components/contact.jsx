@@ -56,6 +56,7 @@ export const Contact = (props) => {
                     <div className='form-group'>
                     
                     <input
+                        style={{padding: '2rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
                         type='email'
                         id='email'
                         name='email'

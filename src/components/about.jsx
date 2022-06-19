@@ -15,7 +15,7 @@ export const About = (props) => {
               <h2>HOW IT WORKS</h2>
               <p>{props.data ? props.data.paragraph : 'loading...'}</p>
               
-              <h3>Reclaim Self-Sovereignty</h3>
+              <h3>Reclaim Self-Sovereignty in ownership economy</h3>
               <div className='list-style'>
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   <ul>
