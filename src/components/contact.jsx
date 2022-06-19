@@ -42,22 +42,25 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
+                <h2>The Ownership Economy</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  We empower people to be Sovereign self.
+                  {/* We are the new way to build a direct relationships with your community. */}
+
+                Sign up to receive the latest updates about new releases, drops and protocol development.
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
-                      <input
-                        type='text'
-                        id='name'
-                        name='name'
+                    
+                    <input
+                        type='email'
+                        id='email'
+                        name='email'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Email address'
                         required
                         onChange={handleChange}
                       />
@@ -66,20 +69,13 @@ export const Contact = (props) => {
                   </div>
                   <div className='col-md-6'>
                     <div className='form-group'>
-                      <input
-                        type='email'
-                        id='email'
-                        name='email'
-                        className='form-control'
-                        placeholder='Email'
-                        required
-                        onChange={handleChange}
-                      />
+                      
                       <p className='help-block text-danger'></p>
+                      
                     </div>
                   </div>
                 </div>
-                <div className='form-group'>
+                {/* <div className='form-group'>
                   <textarea
                     name='message'
                     id='message'
@@ -90,10 +86,10 @@ export const Contact = (props) => {
                     onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
-                </div>
+                </div> */}
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  GET STARTED
                 </button>
               </form>
             </div>
@@ -105,7 +101,7 @@ export const Contact = (props) => {
                 <span>
                   <i className='fa fa-map-marker'></i> Address
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                {/* {props.data ? props.data.address : 'loading'} */}
               </p>
             </div>
             <div className='contact-item'>
@@ -113,7 +109,7 @@ export const Contact = (props) => {
                 <span>
                   <i className='fa fa-phone'></i> Phone
                 </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
+                {/* {props.data ? props.data.phone : 'loading'} */}
               </p>
             </div>
             <div className='contact-item'>
@@ -121,7 +117,7 @@ export const Contact = (props) => {
                 <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
-                {props.data ? props.data.email : 'loading'}
+                {/* {props.data ? props.data.email : 'loading'} */}
               </p>
             </div>
           </div>
