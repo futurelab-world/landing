@@ -35,6 +35,8 @@ export const Header_old = (props) => {
 export const Header = (props) => {
   const [width, setWidth] = useState(window.innerWidth);
 
+  const [email, setEmail] = useState()
+
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }
@@ -67,25 +69,31 @@ export const Header = (props) => {
                 
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   {' '}
-                  <input
-                    style={{ marginTop: '5rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
-                    type='email'
-                    id='email'
-                    name='email'
-                    className='form-control'
-                    placeholder='Email address'
-                    required
-                    onChange={() => {
-
-                    }}
-                  />
-                  <a
-                    style={{marginTop: '2rem'}}
-                    href='https://tbdfuture.xyz'
-                    className='btn btn-custom btn-lg page-scroll'
-                  >
-                    GET STARTED
-                  </a>{' '}
+                  <form name='sentMessage' validate>
+                    <input
+                      style={{ marginTop: '5rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
+                      type='email'
+                      id='email'
+                      name='email'
+                      className='form-control'
+                      placeholder='Email address'
+                      required
+                      onChange={(e) => {
+                        setEmail(e.target.value)
+                      }}
+                    />
+                    <a
+                      
+                      style={{marginTop: '2rem'}}
+               
+                      
+                      href={`https://tbdfuture.xyz/signup?email=${email}`}
+                      className='btn btn-custom btn-lg page-scroll'
+                    >
+                      GET STARTED
+                    </a>{' '}
+                  </form>
+            
                 </div>
               </div>
             </div>

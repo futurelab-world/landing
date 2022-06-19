@@ -1,40 +1,41 @@
 import { useState } from 'react'
-import emailjs from 'emailjs-com'
+// import emailjs from 'emailjs-com'
 
-const initialState = {
-  name: '',
-  email: '',
-  message: '',
-}
+// const initialState = {
+//   name: '',
+//   email: '',
+//   message: '',
+// }
 
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [email, setEmail] = useState()
+  
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setState((prevState) => ({ ...prevState, [name]: value }))
-  }
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target
+  //   setState((prevState) => ({ ...prevState, [name]: value }))
+  // }
 
-  const clearState = () => setState({ ...initialState })
+  // const clearState = () => setState({ ...initialState })
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
     
-    emailjs
-      .sendForm(
-        // 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-        'landing_page', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
-  }
+  //   emailjs
+  //     .sendForm(
+  //       // 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+  //       'landing_page', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text)
+  //         clearState()
+  //       },
+  //       (error) => {
+  //         console.log(error.text)
+  //       }
+  //     )
+  // }
   return (
     <div>
       <div id='contact'>
@@ -50,7 +51,7 @@ export const Contact = (props) => {
                 Sign up to receive the latest updates about new releases, drops and protocol development.
                 </p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              <form name='sentMessage' validate>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -63,7 +64,10 @@ export const Contact = (props) => {
                         className='form-control'
                         placeholder='Email address'
                         required
-                        onChange={handleChange}
+                        onChange={(e) => {
+                            setEmail(e.target.value)
+                          }}
+                      
                       />
                       <p className='help-block text-danger'></p>
                     </div>
@@ -89,7 +93,7 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div> */}
           
-                <a className='btn btn-custom btn-lg' href="https://tbdfuture.xyz">
+                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup?email=${email}`}>
                   GET STARTED
                 </a>
               </form>
