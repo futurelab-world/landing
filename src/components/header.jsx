@@ -72,7 +72,7 @@ export const Header = (props) => {
                   }}
                 />
                 <a
-                  href='https://futurelab.world'
+                  href='https://tbdfuture.xyz'
                   className='btn btn-custom btn-lg page-scroll'
                 >
                   GET STARTED
@@ -88,7 +88,7 @@ export const Header = (props) => {
           { !isMobile && <div className='col-xs-12 col-md-6'>
             <div className='about-text'>
             {' '}
-              <img src='img/about.jpg' className='img-responsive' alt='' />{' '}
+              <img src='img/demo-2.png' className='img-responsive' alt='' />{' '}
             </div>
           </div>
           }
