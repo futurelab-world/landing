@@ -9,6 +9,7 @@ import { Gallery } from './components/gallery'
 import { Testimonials } from './components/testimonials'
 import { Footer } from './components/footer'
 import { Contact } from './components/contact'
+import { Brand } from './components/Brand'
 import JsonData from './data/data.json'
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -27,6 +28,7 @@ const App = () => {
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
+      <Brand/>
       <About data={landingPageData.About} />
       {/* <Services data={landingPageData.Services} /> */}
       <Contact />

@@ -7,9 +7,6 @@ export const Header_old = (props) => {
     color: 'linear-gradient(84.06deg, #0088FF -28.62%, #A033FF 36.39%, #FF5C87 98.74%)'
   `
 
-
-
-
   return (
     <header id='header'>
       <div className='intro'>
@@ -58,14 +55,14 @@ export const Header = (props) => {
             <div className='about-text'>
               <h2 style={{
                 fontSizze: '32px'
-              }}>Turn yourself into assets</h2>
+              }}>Turn your human capitcal into assets</h2>
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
             
               {/* <h3>Reclaim Self-Sovereignty</h3> */}
               
 
               <div className='list-style' style={{marginTop: '10rem'}}>
-                <h3>Reclaim Self-Sovereignty</h3>
+                <h3>Build your token gated community and social capital</h3>
                 
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   {' '}
