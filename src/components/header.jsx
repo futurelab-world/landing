@@ -55,7 +55,7 @@ export const Header = (props) => {
             <div className='about-text'>
               <h2 style={{
                 fontSizze: '32px'
-              }}>Turn your human capitcal into assets</h2>
+              }}>Turn your human and social capital into assets</h2>
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
             
               {/* <h3>Reclaim Self-Sovereignty</h3> */}
