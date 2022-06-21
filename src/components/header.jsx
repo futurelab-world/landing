@@ -67,7 +67,7 @@ export const Header = (props) => {
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   {' '}
                   <form name='sentMessage' validate>
-                    <input
+                    {/* <input
                       style={{ marginTop: '5rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
                       type='email'
                       id='email'
@@ -78,13 +78,13 @@ export const Header = (props) => {
                       onChange={(e) => {
                         setEmail(e.target.value)
                       }}
-                    />
+                    /> */}
                     <a
                       
                       style={{marginTop: '2rem'}}
                
                       
-                      href={`https://tbdfuture.xyz/signup/${email}`}
+                      href={`https://tbdfuture.xyz/greeting`}
                       className='btn btn-custom btn-lg page-scroll'
                     >
                       GET STARTED
