@@ -89,6 +89,13 @@ export const Header = (props) => {
                     >
                       GET STARTED
                     </a>{' '}
+                    <a
+                      style={{marginTop: '2rem'}}
+                      href={`https://tbdfuture.xyz/music-home`}
+                      className='btn btn-custom btn-lg page-scroll'
+                    >
+                      SNEAK PEAK MUSIC NFTs
+                    </a>{' '}
                   </form>
             
                 </div>
