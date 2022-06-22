@@ -93,7 +93,7 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div> */}
           
-                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/greeting`}>
+                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup`}>
                   GET STARTED
                 </a>
               </form>
