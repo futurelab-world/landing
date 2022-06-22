@@ -41,8 +41,8 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href='#portfolio' className='page-scroll'>
-                中文
+              <a href='https://alysia-wu.gitbook.io/product-docs/' className='page-scroll'>
+                WIKI
               </a>
             </li>
             {/* <li>

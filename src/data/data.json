@@ -113,21 +113,25 @@
     },
     "Features": [{
             "icon": "fa fa-comments-o",
+            "src": "img/woman-in-tech.png",
             "title": "Woman in Tech",
             "text": ""
         },
         {
             "icon": "fa fa-bullhorn",
             "title": "Victoria - GenZ",
+            "src": "img/woman-in-tech.png",
             "text": ""
         },
         {
             "icon": "fa fa-group",
+            "src": "img/woman-in-tech.png",
             "title": "House Music DJ",
             "text": ""
         },
         {
             "icon": "fa fa-magic",
+            "src": "img/woman-in-tech.png",
             "title": "Asian Woman Leadership Coach",
             "text": ""
         }
