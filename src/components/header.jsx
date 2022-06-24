@@ -55,14 +55,15 @@ export const Header = (props) => {
             <div className='about-text'>
               <h2 style={{
                 fontSizze: '32px'
-              }}>Turn your human and social capital into assets</h2>
+              }}>Democratize Digital Asset Investment and Participation for ALL</h2>
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
             
               {/* <h3>Reclaim Self-Sovereignty</h3> */}
               
 
               <div className='list-style' style={{marginTop: '10rem'}}>
-                <h3>Build your token gated community and social capital</h3>
+                <h3>Unlock your ticket to digital owernship as little as $1 </h3>
+                {/* your token gated community and social capital */}
                 
                 <div className='col-lg-6 col-sm-6 col-xs-12'>
                   {' '}
