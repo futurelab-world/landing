@@ -97,7 +97,7 @@ export const Header = (props) => {
                     <a
                       
                       style={{marginTop: '2rem'}}
-                      href={`https://tbdfuture.xyz/explore`}
+                      href={`https://tbdfuture.xyz/browse`}
                       className='btn btn-custom btn-lg page-scroll'
                       onClick={() => {
                         window.analytics.track('EXPLORE FIRST  Btn CTA @ Header', 'click');
@@ -105,7 +105,7 @@ export const Header = (props) => {
                     >
                       EXPLORE FIRST
                     </a>{' '}
-                    <a
+                    {/* <a
                       style={{marginTop: '2rem'}}
                       href={`https://tbdfuture.xyz/music-home`}
                       className='btn btn-custom btn-lg page-scroll'
@@ -114,7 +114,7 @@ export const Header = (props) => {
                       }}
                     >
                       SNEAK PEAK MUSIC NFTs
-                    </a>{' '}
+                    </a>{' '} */}
                   </form>
             
                 </div>
