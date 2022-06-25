@@ -87,13 +87,31 @@ export const Header = (props) => {
                       
                       href={`https://tbdfuture.xyz/signup`}
                       className='btn btn-custom btn-lg page-scroll'
+                      onClick={() => {
+                        window.analytics.track('Get Started Btn CTA @ Header', 'click');
+                      }}
+
                     >
                       GET STARTED
+                    </a>{' '}
+                    <a
+                      
+                      style={{marginTop: '2rem'}}
+                      href={`https://tbdfuture.xyz/explore`}
+                      className='btn btn-custom btn-lg page-scroll'
+                      onClick={() => {
+                        window.analytics.track('EXPLORE FIRST  Btn CTA @ Header', 'click');
+                      }}
+                    >
+                      EXPLORE FIRST
                     </a>{' '}
                     <a
                       style={{marginTop: '2rem'}}
                       href={`https://tbdfuture.xyz/music-home`}
                       className='btn btn-custom btn-lg page-scroll'
+                      onClick={() => {
+                        window.analytics.track('GSNEAK PEAK MUSIC NFTs Btn CTA @ Header', 'click');
+                      }}
                     >
                       SNEAK PEAK MUSIC NFTs
                     </a>{' '}

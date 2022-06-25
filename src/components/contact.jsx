@@ -93,7 +93,9 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div> */}
           
-                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup`}>
+                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup`} onClick={() => {
+                  window.analytics.track('Get Started Btn CTA', 'click');
+                }}>
                   GET STARTED
                 </a>
               </form>

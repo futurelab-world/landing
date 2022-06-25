@@ -19,6 +19,10 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({})
+
+  window.analytics.track('landing page', 'impression');
+
+
   useEffect(() => {
     setLandingPageData(JsonData)
   }, [])
