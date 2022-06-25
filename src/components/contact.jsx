@@ -36,6 +36,14 @@ export const Contact = (props) => {
   //       }
   //     )
   // }
+  const trackEvent = () => {
+    window.analytics.track('futurelab.world', 'page view');
+  }
+
+
+  trackEvent()
+
+
   return (
     <div>
       <div id='contact'>

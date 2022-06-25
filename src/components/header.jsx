@@ -92,6 +92,13 @@ export const Header = (props) => {
                     </a>{' '}
                     <a
                       style={{marginTop: '2rem'}}
+                      href={`https://tbdfuture.xyz/explore`}
+                      className='btn btn-custom btn-lg page-scroll'
+                    >
+                      EXPLORE
+                    </a>{' '}
+                    <a
+                      style={{marginTop: '2rem'}}
                       href={`https://tbdfuture.xyz/music-home`}
                       className='btn btn-custom btn-lg page-scroll'
                     >

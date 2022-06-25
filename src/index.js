@@ -1,12 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { AuthProvider } from "./AuthProvider";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useRoutes,
+} from "react-router-dom";
+
+const App = () => {
+  let routes = useRoutes([
+    { path: "/", element: <App /> },
+    // { path: "component2", element: <Component2 /> },
+    // ...
+  ]);
+  return routes;
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
