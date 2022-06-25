@@ -97,7 +97,7 @@ export const Header = (props) => {
                     <a
                       
                       style={{marginTop: '2rem'}}
-                      href={`https://tbdfuture.xyz/browse`}
+                      href={`https://tbdfuture.xyz`}
                       className='btn btn-custom btn-lg page-scroll'
                       onClick={() => {
                         window.analytics.track('EXPLORE FIRST  Btn CTA @ Header', 'click');
