@@ -36,27 +36,59 @@ export const Contact = (props) => {
   //       }
   //     )
   // }
+
+  return (
+
+    <div className='container'>
+    <div className='col-md-12'>
+    <div className='row'  style={{margin: '0 auto', textAlign: 'center'}}>
+      <div className='social' style={{alignItems: 'center',   margin: '0 auto', }}>
+        {/* <img src='img/logo-full.png' height= '50px'/> */}
+        <h3> Stay updated. Follow us on social media</h3>
+        <ul style={{display: 'flex', width: '100px',  alignItems: 'center', margin: '0 auto'}}>
+          <li style={{ width: '30px'}}>
+            <a href={'https://www.facebook.com/profile.php?id=100083244885918'}>
+              <i className='fa fa-facebook'></i>
+            </a>
+          </li>
+          <li style={{ width: '40px'}}>
+            <a href={'https://twitter.com/web3talentsdao'}>
+              <i className='fa fa-twitter'></i>
+            </a>
+          </li>
+          <li style={{ width: '30px'}}>
+            <a href={'https://www.instagram.com/web3talentsdao/'}>
+              <i className='fa fa-instagram'></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  )
   return (
     <div>
       <div id='contact'>
         <div className='container'>
-          <div className='col-md-8'>
-            <div className='row'>
-              <div className='section-title'>
-                <h2>The Ownership Economy</h2>
-                <p>
-                  We empower people to be Sovereign self.
+          {/* <div className='col-md-8'> */}
+            {/* <div className='row'> */}
+              {/* <div className='section-title'> */}
+                {/* <h2>The Ownership Economy</h2> */}
+                {/* <p> */}
+                  {/* We empower people to be Sovereign self. */}
                   {/* We are the new way to build a direct relationships with your community. */}
-
-                Sign up to receive the latest updates about new releases, drops and protocol development.
-                </p>
-              </div>
-              <form name='sentMessage' validate>
-                <div className='row'>
+                  {/* Demand for Web3 talent surges as internet moves to next stage */}
+                {/* Sign up to receive the latest updates about new releases, drops and protocol development. */}
+                {/* </p> */}
+              {/* </div> */}
+              {/* <form name='sentMessage' validate> */}
+                {/* <div className='row'>
                   <div className='col-md-6'>
-                    <div className='form-group'>
+                    <div className='form-group'> */}
                     
-                    <input
+                    {/* <input
                         style={{padding: '2rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
                         type='email'
                         id='email'
@@ -68,8 +100,8 @@ export const Contact = (props) => {
                             setEmail(e.target.value)
                           }}
                       
-                      />
-                      <p className='help-block text-danger'></p>
+                      /> */}
+                      {/* <p className='help-block text-danger'></p>
                     </div>
                   </div>
                   <div className='col-md-6'>
@@ -79,7 +111,7 @@ export const Contact = (props) => {
                       
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* <div className='form-group'>
                   <textarea
                     name='message'
@@ -93,58 +125,60 @@ export const Contact = (props) => {
                   <p className='help-block text-danger'></p>
                 </div> */}
           
-                <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup`} onClick={() => {
+                {/* <a className='btn btn-custom btn-lg' href={`https://tbdfuture.xyz/signup`} onClick={() => {
                   window.analytics.track('Get Started Btn CTA', 'click');
                 }}>
                   GET STARTED
-                </a>
-              </form>
-            </div>
-          </div>
+                </a> */}
+              {/* </form>
+            </div> */}
+          {/* </div> */}
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
+              {/* <h3>Contact Info</h3> */}
               <p>
-                <span>
+                {/* <span>
                   <i className='fa fa-map-marker'></i> Address
-                </span>
+                </span> */}
                 {/* {props.data ? props.data.address : 'loading'} */}
               </p>
             </div>
             <div className='contact-item'>
               <p>
-                <span>
+                {/* <span>
                   <i className='fa fa-phone'></i> Phone
-                </span>{' '}
+                </span>{' '} */}
                 {/* {props.data ? props.data.phone : 'loading'} */}
               </p>
             </div>
-            <div className='contact-item'>
-              <p>
-                <span>
+            {/* <div className='contact-item' >
+              <p> */}
+                {/* <a href='mailto:info@futurelab.world' style={{color: '#fff'}}>
                   <i className='fa fa-envelope-o'></i> Email
-                </span>{' '}
+                </a>{' '} */}
                 {/* {props.data ? props.data.email : 'loading'} */}
-              </p>
-            </div>
+              {/* </p>
+            </div> */}
           </div>
           <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
+                {/* <img src='img/logo-full.png' height= '50px'/> */}
+                <h3> Stay updated. Follow us on social media</h3>
                 <ul>
                   <li>
-                    <a href={props.data ? props.data.facebook : '/'}>
+                    <a href={'https://www.facebook.com/profile.php?id=100083244885918'}>
                       <i className='fa fa-facebook'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.twitter : '/'}>
+                    <a href={'https://twitter.com/web3talentsdao'}>
                       <i className='fa fa-twitter'></i>
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
+                    <a href={'https://www.instagram.com/web3talentsdao/'}>
+                      <i className='fa fa-instagram'></i>
                     </a>
                   </li>
                 </ul>

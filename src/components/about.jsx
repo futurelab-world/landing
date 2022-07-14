@@ -3,7 +3,7 @@
 
 export const About = (props) => {
   return (
-    <div id='how' style={{marginBottom: '5rem'}}>
+    <div id='how' style={{margin: '5rem'}}>
       <div className='container'>
         <div className='row'>
           <div className='col-xs-12 col-md-6'>
@@ -12,7 +12,7 @@ export const About = (props) => {
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text'>
-              <h2>HOW IT WORKS</h2>
+              <h2>Do you know your transferrable skills in web3?</h2>
               <p>{props.data ? props.data.paragraph : 'loading...'}</p>
               
               <h3>Thrive in the Ownership and Passion Economy</h3>
@@ -30,18 +30,41 @@ export const About = (props) => {
                         style={{
                           padding: '1rem 0rem'
                         }}
-                       >✨ Turn your skills into redeemable equity</li>
+                       >
+                     
+                       <h3>✨ Own</h3>
+                       Turn your resume into NFT, your resume would be a unique NFT that you own, and list in our marketplace where recruiters, businesses, and Human Resources would be able to access your unique NFT (your resume) to reach out to you about opportunities.</li>
                        <li
                        style={{
                         padding: '1rem 0rem'
                       }}
 
-                       >🚀 Auction your talents on your social / professional network</li>
+                       > 
+                       
+                       {/* Own your careers and let recuiters pay to talk to you */}
+
+                        
+                       {/* Have ownership of their careers */}
+
+                       {/* The Resume NFT Project would be a */}
+
+                       {/* Recruiters will be paying you or splitting with a type of money or crypto to be able to access your information and reach out. */}
+                    
+                       <h3>🚀 Earn</h3>
+                       You also earn $Talent Token for every time they access your NFT resume/Contact information to reach out to you. The more companies that reach out to you the more $Talent you collect.
+                       </li>
                        <li
                        style={{
                         padding: '1rem 0rem'
                       }}
-                       >📈 You set the price tag on your talent, influence and work</li>
+                       > 
+                       {/* Rent out your NFT Resumes for recruiters to show interest in your background and skillsets.   */}
+                       
+                       <h3>📈 Reward</h3>
+                       
+                       Every member will receive a % of each transaction fee distributed from every transaction from a recruiter, HR, business accessing the marketplace platform it will be automatically redistributed automatically without the need for gas fees.
+                       
+                       </li>
 
                   </ul>
                 </div>

@@ -1,4 +1,7 @@
+// import logo from 'img/logo'
+
 export const Navigation = (props) => {
+
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,7 +19,8 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
-            Future 
+            {/* Web3 Talents */}
+            <img src='img/logo-full.png' height='50px' />
           </a>{' '}
         </div>
 
@@ -26,8 +30,8 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#features' className='page-scroll'>
-                TRENDING NOW
+              <a href='#about' className='page-scroll'>
+               About us
               </a>
             </li>
             <li>
@@ -36,14 +40,14 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
+              {/* <a href='#services' className='page-scroll'>
                 BLOGS
-              </a>
+              </a> */}
             </li>
             <li>
-              <a href='https://alysia-wu.gitbook.io/product-docs/' className='page-scroll'>
+              {/* <a href='https://alysia-wu.gitbook.io/product-docs/' className='page-scroll'>
                 WIKI
-              </a>
+              </a> */}
             </li>
             {/* <li>
               <a href='#testimonials' className='page-scroll'>

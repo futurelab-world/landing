@@ -5,7 +5,7 @@ export const Footer = (props) => {
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            Future Lab Inc
+            Future Protocol Co.
             &copy; 2022 All rights reserved 
           </p>
         </div>

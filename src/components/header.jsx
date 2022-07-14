@@ -47,29 +47,59 @@ export const Header = (props) => {
 
   const isMobile = width <= 768;
 
+  window.analytics.track('Web3 Talents Landing Page Viewed');
+
   return (
-    <div id='about' style={{padding: '-10rem'}}>
+    <div id='about' style={{
+      padding: '10rem',
+      background: 'linear-gradient(to right, #FDDCF4 0%, #5ca9fb 100%)',
+      textAlign: 'center'
+
+    
+    }}>
       <div className='container'>
-        <div className='row'>
-          <div className='col-xs-12 col-md-6'>
+        <div className='row_'>
+          <div className='col-xs-12_ col-md-12_'>
             <div className='about-text'>
-              <h2 style={{
-                fontSizze: '32px'
-              }}>Democratize Digital Asset Investment and Participation for ALL</h2>
+
+           
+                <h3 style={{marginTop: '10rem'}}> Your resume will soon be an NFT!
+                </h3>
+              <h1 style={{
+                fontSize: '54px',
+                marginTop: '50px',
+                color: '#000',
+                textAlign: 'center'
+              }}>
+                Earn by becoming web3 talents, get paid by talking to web3 recuiters.
+
+                {/* Get paid switching to web3 */}
+                {/*  */}
+              
+              </h1>
+
+
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
             
               {/* <h3>Reclaim Self-Sovereignty</h3> */}
               
 
-              <div className='list-style' style={{marginTop: '10rem'}}>
-                <h3>Unlock your ticket to digital owernship as little as $1 </h3>
+              <div className='list-style' style={{margin: '6rem'}}>
+                <h3  style={{margin: '4rem'}}>
+
+                Demand for Web3 talent surges as internet moves to next stage
+
+                </h3>
                 {/* your token gated community and social capital */}
                 
-                <div className='col-lg-6 col-sm-6 col-xs-12'>
+                <div className='col-lg-12 col-sm-12 col-xs-12'>
                   {' '}
                   <form name='sentMessage' validate>
                     {/* <input
-                      style={{ marginTop: '5rem', border: 'none', borderBottom: '1px solid #a9a9a9', marginBottom: '2rem'}}
+                      style={{ 
+                          marginTop: '5rem', border: 'none', marginBottom: '2rem', alignItems: 'center', width: '200px', margin: '0 auto',
+                          height: '35px'
+                      }}
                       type='email'
                       id='email'
                       name='email'
@@ -82,19 +112,21 @@ export const Header = (props) => {
                     /> */}
                     <a
                       
-                      style={{marginTop: '2rem'}}
-               
+                      style={{marginTop: '5rem', color: '#000', fontWeight: '600'}}
+                      className="rainbow-button" 
                       
-                      href={`https://tbdfuture.xyz/signup`}
-                      className='btn btn-custom btn-lg page-scroll'
+                      href={`https://airtable.com/shruzrfhjEwz5GXB8`}
+                      // className='btn btn-custom btn-lg page-scroll'
                       onClick={() => {
-                        window.analytics.track('Get Started Btn CTA @ Header', 'click');
+                        window.analytics.track('Web3 Talents Join Beta Clicked');
                       }}
 
                     >
-                      GET STARTED
+                      Join Beta
+
+                      
                     </a>{' '}
-                    <a
+                    {/* <a
                       
                       style={{marginTop: '2rem'}}
                       href={`https://tbdfuture.xyz`}
@@ -104,7 +136,7 @@ export const Header = (props) => {
                       }}
                     >
                       EXPLORE FIRST
-                    </a>{' '}
+                    </a>{' '} */}
                     {/* <a
                       style={{marginTop: '2rem'}}
                       href={`https://tbdfuture.xyz/music-home`}
@@ -121,13 +153,13 @@ export const Header = (props) => {
               </div>
             </div>
           </div>
-          { !isMobile && <div className='col-xs-12 col-md-6'>
+          {/* { !isMobile && <div className='col-xs-12 col-md-6'>
             <div className='about-text' style={{width: '350px', marginLeft: '100px', marginTop: '25px'}}>
             {' '}
               <img src='img/demo-yenifer-381.png' className='img-responsive' alt='' />{' '}
             </div>
           </div>
-          }
+          } */}
         </div>
       </div>
     </div>
