@@ -121,11 +121,8 @@ export const Header = (props) => {
                       onClick={() => {
                         window.analytics.track('Web3 Talents Join Beta Clicked');
                       }}
-
                     >
-                      Join Beta
-
-                      
+                      Join Beta Waitlist
                     </a>{' '}
                     {/* <a
                       
