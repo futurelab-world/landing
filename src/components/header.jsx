@@ -32,7 +32,7 @@ export const Header_old = (props) => {
 export const Header = (props) => {
   const [width, setWidth] = useState(window.innerWidth);
 
-  const [email, setEmail] = useState()
+  // const [email, setEmail] = useState()
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -51,7 +51,8 @@ export const Header = (props) => {
 
   return (
     <div id='about' style={{
-      padding: '10rem',
+      padding: `${isMobile ? '20px': '50px'}`,
+      paddingBottom: '20px',
       background: 'linear-gradient(to right, #FDDCF4 0%, #5ca9fb 100%)',
       textAlign: 'center'
 
@@ -63,10 +64,10 @@ export const Header = (props) => {
             <div className='about-text'>
 
            
-                <h3 style={{marginTop: '10rem'}}> Your resume will soon be an NFT!
+                <h3 style={{marginTop: '10rem', fontSize:  `${isMobile ? '16px': '24px'}`}}> Your resume will soon be an NFT!
                 </h3>
-              <h1 style={{
-                fontSize: '54px',
+              <h2 style={{
+                fontSize: `${isMobile ? '32px': '54px'}`,
                 marginTop: '50px',
                 color: '#000',
                 textAlign: 'center'
@@ -76,7 +77,7 @@ export const Header = (props) => {
                 {/* Get paid switching to web3 */}
                 {/*  */}
               
-              </h1>
+              </h2>
 
 
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
@@ -84,7 +85,7 @@ export const Header = (props) => {
               {/* <h3>Reclaim Self-Sovereignty</h3> */}
               
 
-              <div className='list-style' style={{margin: '6rem'}}>
+              <div className='list-style' style={{margin: `${isMobile ? '0px': '16px'}`}}>
                 <h3  style={{margin: '4rem'}}>
 
                 Demand for Web3 talent surges as internet moves to next stage

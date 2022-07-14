@@ -1,18 +1,49 @@
 // HOW IT WORKS
 
+import { useState, useEffect } from 'react'
 
 export const About = (props) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
+  const isMobile = width <= 768;
+
   return (
     <div id='how' style={{margin: '5rem'}}>
       <div className='container'>
         <div className='row'>
-          <div className='col-xs-12 col-md-6'>
+          <div className='col-xs-12 col-md-6' style={{
+              marginTop: `${isMobile ? '0px': '100px'}`,
+              paddingBottom: '20px',
+            }}>
             {' '}
             <img src='img/how.png' className='img-responsive' alt='' />{' '}
           </div>
           <div className='col-xs-12 col-md-6'>
-            <div className='about-text'>
-              <h2>Do you know your transferrable skills in web3?</h2>
+            <div className='about-text' style={{
+              padding: `${isMobile ? '0px': '10px'}`,
+              paddingBottom: '20px',
+            }}>
+             <h2 style={{
+                fontSize: `${isMobile ? '24px': '32px'}`,
+                marginTop: '50px',
+                color: '#000',
+          
+              }}>
+              
+              Do you know you have transferrable skills in web3 and can get paid to engage with web3 recruiters?</h2>
               <p>{props.data ? props.data.paragraph : 'loading...'}</p>
               
               <h3>Thrive in the Ownership and Passion Economy</h3>
