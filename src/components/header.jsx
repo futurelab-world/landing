@@ -72,7 +72,7 @@ export const Header = (props) => {
                 color: '#000',
                 textAlign: 'center'
               }}>
-                Earn by becoming web3 talents, get paid by talking to web3 recuiters.
+                Earn by becoming web3 talents, get paid by talking to web3 recruiters.
 
                 {/* Get paid switching to web3 */}
                 {/*  */}
