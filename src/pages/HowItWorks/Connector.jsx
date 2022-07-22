@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 
-export const HowItWorksTalents = (props) => {
+export const Connector = (props) => {
   const [width, setWidth] = useState(window.innerWidth);
 
 
@@ -28,7 +28,7 @@ export const HowItWorksTalents = (props) => {
               paddingBottom: '20px',
             }}>
             {' '}
-            <img src='img/how.png' className='img-responsive' alt='' />{' '}
+            <img src='https://hbr.org/resources/images/article_assets/2021/11/Nov21_22_3820920_559572321.jpg' className='img-responsive' alt='' />{' '}
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text' style={{
@@ -42,7 +42,7 @@ export const HowItWorksTalents = (props) => {
           
               }}>
               
-              Talents</h2>
+              </h2>
           
               
               <h3></h3>
@@ -57,16 +57,19 @@ export const HowItWorksTalents = (props) => {
                           padding: '1rem 0rem'
                         }}
                        >
+
+                      <h2 style={{
+                        fontSize: `${isMobile ? '24px': '32px'}`,
+                        marginTop: '50px',
+                        color: '#000',
+                  
+                      }}>
+                        ✨ Connector
+                      </h2>
+                      <p>
+                      With Web3talents, connectors can make full use of their expertise to "connect2earn". Each match(recommend) would cost the connector 10% of the NFT price and receive double tokens when the company accepts the resume.
+                      </p>
                      
-                       <h3>✨ Talent</h3>
-                       
-                        Talents mint their NFTs by 3 steps: KYC, upload information, and set their price. The resume will be NFTlized by TalenTale for 500 amount in total.
-
-                        Once others––companies, talents, or connectors––unlock their NFTs through tokens, they get tokens directly. Also, they can expand their social circles by purchasing resumes from anyone without feeling embarrassing.
-
-                        When you need to apply a job by youself:
-
-                        They can receive your NFT and unlock it for free.
 
                       </li>
                   </ul>

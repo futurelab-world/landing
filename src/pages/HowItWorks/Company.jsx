@@ -28,7 +28,7 @@ export const Company = (props) => {
               paddingBottom: '20px',
             }}>
             {' '}
-            <img src='img/how.png' className='img-responsive' alt='' />{' '}
+            <img src='https://www.wgu.edu/content/dam/web-sites/mvp/landing-pages/career-guides/business/recruiter-2.png' className='img-responsive' alt='' />{' '}
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text' style={{
@@ -42,7 +42,7 @@ export const Company = (props) => {
           
               }}>
               
-              ✨ Company</h2>
+              </h2>
           
               
               <h3></h3>
@@ -58,12 +58,23 @@ export const Company = (props) => {
                         }}
                        >
                      
-                       <h3></h3>
+                     <h2 style={{
+                        fontSize: `${isMobile ? '24px': '32px'}`,
+                        marginTop: '50px',
+                        color: '#000',
+                
+                    }}>
+                    
+                    ✨ Company</h2>
                        
+                       <p>
                        Hiring top talent is expensive. While the traditional recruit platform markups talent by up to 70%, we charge a flat rate of 2.5% based on each talent's NFT resume mint fee. Without high markups, you can make your budget go 20-30x further.
 
 
-                        Because of our "match2earn" system, numerous people will stay active on our platform to discover talents as connectors. Now, those people would become sharing HR to help you analyze and find the most matched talents according to your job description and company culture.
+                            Because of our "match2earn" system, numerous people will stay active on our platform to discover talents as connectors. Now, those people would become sharing HR to help you analyze and find the most matched talents according to your job description and company culture.
+
+                       </p>
+                     
 
                       </li>
                   </ul>

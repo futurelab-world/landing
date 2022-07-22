@@ -7,7 +7,8 @@ import { Contact } from '../../components/contact'
 
 import JsonData from '../../data/data.json'
 import { HowItWorksTalents } from './HowItWorksTalent'
-
+import { Connector } from './Connector'
+import { Company } from './Company'
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -31,8 +32,8 @@ export const HowItWorks = () => {
 
 
         <HowItWorksTalents />
-        <HowItWorksTalents />
-        <HowItWorksTalents />
+        <Connector />
+        <Company />
    
         <Contact />
         <Footer />
