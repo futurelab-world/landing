@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { FaDiscord } from 'react-icons/fa'
 // import emailjs from 'emailjs-com'
 
 // const initialState = {
@@ -46,7 +47,13 @@ export const Contact = (props) => {
       <div className='social' style={{alignItems: 'center',   margin: '0 auto', }}>
         {/* <img src='img/logo-full.png' height= '50px'/> */}
         <h3> Stay updated. Follow us on social media</h3>
-        <ul style={{display: 'flex', width: '100px',  alignItems: 'center', margin: '0 auto'}}>
+        <ul style={{display: 'flex', width: '120px',  alignItems: 'center', margin: '0 auto'}}>
+        <li style={{ width: '30px'}}>
+            <a href={'https://discord.gg/MSJtrV6xjb'}>
+            <FaDiscord />
+              <i class="fa fa-discord" aria-hidden="true"></i>
+            </a>
+          </li>
           <li style={{ width: '30px'}}>
             <a href={'https://www.facebook.com/profile.php?id=100083244885918'}>
               <i className='fa fa-facebook'></i>

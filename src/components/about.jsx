@@ -6,7 +6,6 @@ export const About = (props) => {
   const [width, setWidth] = useState(window.innerWidth);
 
 
-
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }
