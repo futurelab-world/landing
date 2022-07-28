@@ -16,7 +16,7 @@ export function Talents() {
         <div className="home-card" >
           <div className="bids-card"
             style={{
-              height: '400px',
+              height: '700px',
               background: 'linear-gradient(84.06deg, rgb(224, 234, 200, 0.3) -28.62%, rgb(224, 234, 200, 0.3) 36.39%, rgb(224, 234, 200, 0.3)',
               borderRadius: '1rem',
               boxShadow: '0px 15px 20px #d7d7d7' }}

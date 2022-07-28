@@ -53,7 +53,7 @@ export const Header = (props) => {
     <div id='about' style={{
       padding: `${isMobile ? '20px': '50px'}`,
       paddingBottom: '20px',
-      background: 'linear-gradient(to right, #FDDCF4 0%, #5ca9fb 100%)',
+      background: 'linear-gradient(to bottom right, #fb7185, #d946ef, #6366f1)',
       textAlign: 'center'
 
     
@@ -64,13 +64,14 @@ export const Header = (props) => {
             <div className='about-text'>
 
            
-                <h3 style={{marginTop: '10rem', fontSize:  `${isMobile ? '16px': '24px'}`}}> Your resume will soon be an NFT!
+                <h3 style={{marginTop: '10rem', color: '#fff', fontSize:  `${isMobile ? '16px': '24px'}`}}> Your resume will soon be an NFT!
                 </h3>
               <h2 style={{
                 fontSize: `${isMobile ? '32px': '54px'}`,
                 marginTop: '50px',
                 color: '#000',
-                textAlign: 'center'
+                textAlign: 'center',
+                color: '#fff'
               }}>
                 Earn by becoming web3 talents, get paid by talking to web3 recruiters.
 
@@ -86,14 +87,14 @@ export const Header = (props) => {
               
 
               <div className='list-style' style={{margin: `${isMobile ? '0px': '16px'}`}}>
-                <h3  style={{margin: '4rem'}}>
+                <h3  style={{margin: '4rem', color: '#fff'}}>
 
                 Demand for Web3 talent surges as internet moves to next stage
 
                 </h3>
                 {/* your token gated community and social capital */}
                 
-                <div className='col-lg-12 col-sm-12 col-xs-12'>
+                <div className='col-lg-12 col-sm-12 col-xs-12' style={{marginTop: '80px'}}>
                   {' '}
                   <form name='sentMessage' validate>
                     {/* <input
