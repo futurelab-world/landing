@@ -49,7 +49,14 @@ export const Contact = (props) => {
         <h3> Stay updated. Follow us on social media</h3>
         <ul style={{display: 'flex', width: '120px',  alignItems: 'center', margin: '0 auto'}}>
         <li style={{ width: '30px'}}>
-            <a href={'https://discord.gg/MSJtrV6xjb'}>
+            <a href={'https://discord.gg/MSJtrV6xjb'} onClick={
+              () => {
+                window.analytics.track('Web3 Talents, Discord btn clicked', {
+                  userAgent: window.navigator.userAgent,
+                  url: window.location.href,
+                });
+              }
+            }>
             <FaDiscord />
               <i class="fa fa-discord" aria-hidden="true"></i>
             </a>

@@ -1,6 +1,7 @@
 import ParticlesBg from "particles-bg";
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import ReactPixel from 'react-facebook-pixel';
 
 export const Header_old = (props) => {
   const HighlightedText = styled.div`
@@ -46,6 +47,14 @@ export const Header = (props) => {
   }, []);
 
   const isMobile = width <= 768;
+
+ 
+  let position
+  const watchID = navigator.geolocation.watchPosition((position) => {
+    // doSomething(position.coords.latitude, position.coords.longitude);
+    position = position
+
+  });
 
   window.analytics.track('Web3 Talents Landing Page Viewed');
 
@@ -120,7 +129,18 @@ export const Header = (props) => {
                       href={`https://airtable.com/shruzrfhjEwz5GXB8`}
                       // className='btn btn-custom btn-lg page-scroll'
                       onClick={() => {
-                        window.analytics.track('Web3 Talents Join Beta Clicked');
+                        window.analytics.track('Web3 Talents Join Beta Clicked', {
+                          userAgent: window.navigator.userAgent,
+                          url: window.location.href,
+                          geolocation: position,
+                        });
+
+                        ReactPixel.track('Web3 Talents Join Beta Clicked', {
+                          userAgent: window.navigator.userAgent,
+                          url: window.location.href,
+                          geolocation: position,
+                        }); 
+                        
                       }}
                     >
                       Join Beta Waitlist
