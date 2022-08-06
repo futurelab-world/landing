@@ -9,6 +9,7 @@ export const WebSanEntryStep2 = () => {
     return (
     <div 
     style={{height: '500px', width: '100%'}}
+    onClick={() => navigate('/rooms')}
     >
 
 
@@ -17,7 +18,7 @@ className='neon'
      style={{
 
      }}
-     onClick={() => navigate('/rooms')}
+  
         >
            
             三人行 (if three walk together, one can be my teacher)</h1>

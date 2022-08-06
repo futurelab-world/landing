@@ -7,10 +7,11 @@ export const WebSanEntry = () => {
     return (
     <div 
     style={{height: '500px', width: '100%'}}
+    onClick={() => navigate('/welcome')}
     >
              <h1 
              className='entry-text'
-           onClick={() => navigate('/welcome')}
+         
         contenteditable spellcheck="false"
         >WEB 三</h1>
     </div>)
