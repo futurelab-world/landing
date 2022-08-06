@@ -6,7 +6,7 @@ export const WebSanEntry = () => {
 
     return (
     <div 
-        style={{height: '960px', width: '100%'}}
+    style={{height: '500px', width: '100%'}}
     >
              <h1 
              className='entry-text'
