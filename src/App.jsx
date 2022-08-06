@@ -20,6 +20,10 @@ import { About } from './pages/About/index'
 import { HowItWorks } from './pages/HowItWorks/index'
 import { Talents } from './pages/Talents/index'
 
+import { WebSanEntry } from './pages/WebSan/WebSanEntry'
+import { WebSanEntryStep2 } from './pages/WebSan/WebSanEntryStep2'
+import { WebSanEntryStep3 } from './pages/WebSan/WebSanEntryStep3'
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -57,7 +61,13 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<WebSanEntry />} />
+      <Route path="/welcome" element={<WebSanEntryStep2 />} />
+      <Route path="/rooms" element={<WebSanEntryStep3 />} />
+
+
+      <Route path="/talents" element={<Home />} />
+
       <Route path="/about" element={<About />} />
       <Route path="/how-it-works" element={<HowItWorks />} />
       <Route path="/talents" element={<Talents />} />
