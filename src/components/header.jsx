@@ -85,7 +85,7 @@ export const Header = (props) => {
                 color: '#fff'
               }}>
                 {/* Earn by becoming web3 talents, get paid by talking to web3 recruiters. */}
-                Join Websan a decentralized talent nation.
+                Join <span style={{fontWeight: '700'}}>Websan</span> a decentralized talent nation.
 
                 {/* Get paid switching to web3 */}
                 {/*  */}
