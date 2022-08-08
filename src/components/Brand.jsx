@@ -47,7 +47,10 @@ export const Brand2 = (props) => {
                   <a 
                    
                       target="_blank">
-                          <img src="img/Ystartupschool.jpeg" alt="futurelab&#0046;world - Web3&#0032;and&#0032;Passion&#0032;Economy | Product Hunt" style={{
+                          <img 
+                          // src="img/Ystartupschool.jpeg" 
+                          src="https://i.postimg.cc/MKXkP4TR/6.png"
+                          alt="futurelab&#0046;world - Web3&#0032;and&#0032;Passion&#0032;Economy | Product Hunt" style={{
                               width: "150px",
                               height: "150px",
                               borderRadius: '150px'
@@ -69,35 +72,39 @@ export const Brand2 = (props) => {
     const data = [
         {
         title: 'ondeck',
-        src: 'img/ondeck.png'
+        src: 'https://i.postimg.cc/VLbwsp8w/ondeck-small.png'
         },
         {
             title: 'launch',
             src: 'img/founderUni.png'
+            
         },
         {
             title: 'yc',
-            src: 'img/Ystartupschool.jpeg'
+            // src: 'img/Ystartupschool.jpeg'
+            src: "https://i.postimg.cc/MKXkP4TR/6.png"
         },
-        {
-            title: 'product hunt',
-            src: 'https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=348876&theme=light'
-        }
+        // {
+        //     title: 'product hunt',
+        //     src: 'https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=348876&theme=light'
+        // }
 
     ]
     return (
       <div  className='text-center' style={{margin: '15rem 0rem'}}>
         <div className='container'>
-
+        <div className='col-md-10 col-md-offset-1 section-title'>
+          <h2>WE ARE BACKED BY THE BEST</h2>
+        </div>
           <div className='row'>
             { data.map((d, i) => (
-                  <div key={`${d.title}-${i}`} className='col-xs-6 col-md-3'>
+                  <div key={`${d.title}-${i}`} className='col-xs-6 col-md-4'>
                     {' '}
                     {/* <i className={d.icon}></i> */}
                     <img src={d.src} alt="YC" style={{
                               width: `${i === 3 ? '250px' : '150px'}`,
                               height: `${i === 3 ? '150' : '150px'}`,
-                              borderRadius: '150px'
+                              // borderRadius: '150px'
 
                           }} width="250" height="54" />
 

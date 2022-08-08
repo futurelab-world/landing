@@ -11,7 +11,7 @@ import { About } from '../../components/about'
 import { Testimonials } from '../../components/testimonials'
 import { Footer } from '../../components/footer'
 import { Contact } from '../../components/contact'
-// import { Brand } from './components/Brand'
+import { Brand } from '../../components/Brand'
 import JsonData from '../../data/data.json'
 
 const PixelId = '4403233213134549'
@@ -66,12 +66,13 @@ export const Home = () => {
         <Navigation />
         <Header data={landingPageData.Header} />
         {/* <Features data={landingPageData.Features} /> */}
-        {/* <Brand/> */}
+ 
         <About data={landingPageData.About} />
         {/* <Services data={landingPageData.Services} /> */}
 
   
         <Testimonials data={landingPageData.Testimonials} />
+        <Brand/>
         <Contact />
         <Footer />
       </div>
