@@ -16,7 +16,7 @@
   }
   
   /* Generic */
-  body {
+  .mint-3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
     height: 100vh;
     overflow: hidden;
     cursor: pointer;
-    background-image: radial-gradient(circle, #171424, black);
+    /* background-image: radial-gradient(circle, #171424, black); */
   }
   
   .face {

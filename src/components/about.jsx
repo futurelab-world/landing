@@ -28,7 +28,7 @@ export const About = (props) => {
               paddingBottom: '20px',
             }}>
             {' '}
-            <img src='img/how.png' className='img-responsive' alt='' />{' '}
+            <img src='https://i.postimg.cc/xdS3ryp3/how-it-works.png' className='img-responsive' alt='' />{' '}
           </div>
           <div className='col-xs-12 col-md-6'>
             <div className='about-text' style={{

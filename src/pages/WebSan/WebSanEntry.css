@@ -9,7 +9,7 @@
   --neon-border-color: #08f;
 }
 
-body {
+.entry-mint {
   font-family: 'Exo 2', sans-serif;
   display: flex;
   justify-content: center;

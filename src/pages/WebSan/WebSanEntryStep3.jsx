@@ -11,6 +11,7 @@ export const WebSanEntryStep3 = () => {
 
     return (
     <div 
+    className='mint-3'
         style={{height: '960px', width: '1200px'}}
     >
 

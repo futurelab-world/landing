@@ -6,8 +6,9 @@ export const WebSanEntry = () => {
 
     return (
     <div 
-    style={{height: '500px', width: '100%'}}
-    onClick={() => navigate('/welcome')}
+        className='entry-mint'
+        style={{height: '500px', width: '100%'}}
+        onClick={() => navigate('/welcome')}
     >
              <h1 
              className='entry-text'

@@ -61,12 +61,12 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<WebSanEntry />} />
+      <Route path="/mint" element={<WebSanEntry />} />
       <Route path="/welcome" element={<WebSanEntryStep2 />} />
       <Route path="/rooms" element={<WebSanEntryStep3 />} />
 
 
-      <Route path="/talents" element={<Home />} />
+      <Route path="/" element={<Home />} />
 
       <Route path="/about" element={<About />} />
       <Route path="/how-it-works" element={<HowItWorks />} />
