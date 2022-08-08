@@ -19,7 +19,7 @@ export const Navigation = (props) => {
           </button>
           <a className='navbar-brand page-scroll' href='#page-top'>
             {/* Web3 Talents */}
-            <img src='img/logo-full.png' height='50px' />
+            <img src='https://i.postimg.cc/NjhN6PrQ/San.png' height='30px' />
           </a>{' '}
         </div>
 
@@ -33,11 +33,11 @@ export const Navigation = (props) => {
                Home
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href='/how-it-works' className='page-scroll'>
                 HOW IT WORKS
               </a>
-            </li>
+            </li> */}
             <li>
               <a href={'https://www.notion.so/web3talents/About-06143b2162a24d46a0a68658f74d798f'} className='page-scroll'>
                 ABOUT US
