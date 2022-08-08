@@ -1,5 +1,4 @@
 // import logo from 'img/logo'
-
 export const Navigation = (props) => {
 
   return (
@@ -40,9 +39,9 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              {/* <a href='/about' className='page-scroll'>
-                ABOUT
-              </a> */}
+              <a href={'https://www.notion.so/web3talents/About-06143b2162a24d46a0a68658f74d798f'} className='page-scroll'>
+                ABOUT US
+              </a>
             </li>
             <li>
               {/* <a href='#services' className='page-scroll'>

@@ -42,10 +42,13 @@ export const About = (props) => {
           
               }}>
               
-              Do you know you have transferrable skills in web3 and can get paid to engage with web3 recruiters?</h2>
+              {/* Do you know you have transferrable skills in web3 and can get paid to engage with web3 recruiters? */}
+              We are democratizing Web3
+              
+              </h2>
               <p>{props.data ? props.data.paragraph : 'loading...'}</p>
               
-              <h3>Thrive in the Ownership and Passion Economy</h3>
+              {/* <h3>Thrive in the Ownership and Passion Economy</h3> */}
               <div className='list-style'>
                 <div className='col-lg-12 col-sm-6 col-xs-12'>
                   <ul style={{
@@ -62,8 +65,17 @@ export const About = (props) => {
                         }}
                        >
                      
-                       <h3>✨ Own</h3>
-                       Turn your resume into NFT, your resume would be a unique NFT that you own, and list in our marketplace where recruiters, businesses, and Human Resources would be able to access your unique NFT (your resume) to reach out to you about opportunities.</li>
+                       <h3>✨ &nbsp;
+                         {/* Own     */}
+                         Unlocking the power of your <span style={{ fontWeight: '500'}}>career and bringing it</span> on-chain
+                         
+                         
+                         </h3>
+                       {/* Turn your resume into NFT, your resume would be a unique NFT that you own, and list in our marketplace where recruiters, businesses, and Human Resources would be able to access your unique NFT (your resume) to reach out to you about opportunities. */}
+
+                    
+                       
+                       </li>
                        <li
                        style={{
                         padding: '1rem 0rem'
@@ -80,8 +92,15 @@ export const About = (props) => {
 
                        {/* Recruiters will be paying you or splitting with a type of money or crypto to be able to access your information and reach out. */}
                     
-                       <h3>🚀 Earn</h3>
-                       You also earn $Talent Token for every time they access your NFT resume/Contact information to reach out to you. The more companies that reach out to you the more $Talent you collect.
+                       <h3>🚀   &nbsp;
+                          {/* Earn */}
+
+                       Helping you monetize 
+                       <span style={{ fontWeight: '500'}}> your most valuable asset – </span>your skillset
+                       </h3>
+                       {/* You also earn $Talent Token for every time they access your NFT resume/Contact information to reach out to you. The more companies that reach out to you the more $Talent you collect. */}
+
+                      
                        </li>
                        <li
                        style={{
@@ -90,9 +109,16 @@ export const About = (props) => {
                        > 
                        {/* Rent out your NFT Resumes for recruiters to show interest in your background and skillsets.   */}
                        
-                       <h3>📈 Reward</h3>
+                       <h3>📈 &nbsp;
+                         {/* Reward */}
+                         Having influence  <span style={{ fontWeight: '500'}}>  with the things you love to do, jobs are more than jobs now</span>
+                         </h3>
                        
-                       Every member will receive a % of each transaction fee distributed from every transaction from a recruiter, HR, business accessing the marketplace platform it will be automatically redistributed automatically without the need for gas fees.
+                       {/* Every member will receive a % of each transaction fee distributed from every transaction from a recruiter, HR, business accessing the marketplace platform it will be automatically redistributed automatically without the need for gas fees. */}
+
+                     
+
+
                        
                        </li>
 

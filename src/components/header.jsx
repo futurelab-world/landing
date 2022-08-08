@@ -73,21 +73,24 @@ export const Header = (props) => {
             <div className='about-text'>
 
            
-                <h3 style={{marginTop: '10rem', color: '#fff', fontSize:  `${isMobile ? '16px': '24px'}`}}> Your resume will soon be an NFT!
+                <h3 style={{marginTop: '10rem', color: '#fff', fontSize:  `${isMobile ? '16px': '24px'}`}}> 
+                {/* Your resume will soon be an NFT! */}
+                NFT primitives for your professional on-chain identity
                 </h3>
-              <h2 style={{
-                fontSize: `${isMobile ? '32px': '54px'}`,
+              <h1 style={{
+                fontSize: `${isMobile ? '32px': '64px'}`,
                 marginTop: '50px',
                 color: '#000',
                 textAlign: 'center',
                 color: '#fff'
               }}>
-                Earn by becoming web3 talents, get paid by talking to web3 recruiters.
+                {/* Earn by becoming web3 talents, get paid by talking to web3 recruiters. */}
+                Join Websan a decentralized talent nation.
 
                 {/* Get paid switching to web3 */}
                 {/*  */}
               
-              </h2>
+              </h1>
 
 
               {/* <p>{props.data ? props.data.paragraph : 'loading...'}</p> */}
@@ -98,12 +101,13 @@ export const Header = (props) => {
               <div className='list-style' style={{margin: `${isMobile ? '0px': '16px'}`}}>
                 <h3  style={{margin: '4rem', color: '#fff'}}>
 
-                Demand for Web3 talent surges as internet moves to next stage
+                {/* Demand for Web3 talent surges as internet moves to next stage */}
+                We are a community of people that believe in life-long learning and humility “三人行，必有吾师”.
 
                 </h3>
                 {/* your token gated community and social capital */}
                 
-                <div className='col-lg-12 col-sm-12 col-xs-12' style={{marginTop: '80px'}}>
+                <div className='col-lg-12 col-sm-12 col-xs-12' style={{margin: '50px'}}>
                   {' '}
                   <form name='sentMessage' validate>
                     {/* <input
