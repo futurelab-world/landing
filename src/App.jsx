@@ -25,6 +25,9 @@ import { WebSanEntryStep2 } from './pages/WebSan/WebSanEntryStep2'
 import { WebSanEntryStep3 } from './pages/WebSan/WebSanEntryStep3'
 
 
+import { PrivacyPolicy } from './pages/PrivacyPolicy/index'
+
+
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
@@ -67,7 +70,7 @@ function App() {
 
 
       <Route path="/" element={<Home />} />
-
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/about" element={<About />} />
       <Route path="/how-it-works" element={<HowItWorks />} />
       <Route path="/talents" element={<Talents />} />
